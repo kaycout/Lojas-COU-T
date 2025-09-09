@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>COU-T • Loja de Cosméticos</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container header-content">
+      <a href="index.html" class="logo" aria-label="Página inicial">Lojas<span>CouT</span></a>
+
+      <form class="search" role="search" aria-label="Buscar produtos">
+        <input type="search" placeholder="Buscar cosméticos, marcas..." aria-label="Buscar" />
+        <button type="submit">Buscar</button>
+      </form>
+
+      <nav class="nav" aria-label="Navegação principal">
+        <a href="novidades.html">Novidades</a>
+        <a href="skincare.html">Skincare</a>
+        <a href="maquiagem.html">Maquiagem</a>
+        <a href="cabelos.html">Cabelos</a>
+        <a href="promocoes.html">Promoções</a>
+        <a href="carrinho.html" class="cart" aria-label="Carrinho">🛒 <span class="badge">2</span></a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Banner / Hero -->
+  <section class="hero">
+    <div class="container hero-content">
+      <h1>Cuide da sua pele com brilho e leveza ✨</h1>
+      <p>Seleção de skincare com até 30% OFF nesta semana.</p>
+      <a href="verofertas.html" class="btn-primary">Ver ofertas</a>
+    </div>
+  </section>
+
+  <!-- Conteúdo principal -->
+  <main class="container main-grid">
+    <!-- Filtros (opcional) -->
+    <aside class="filters" aria-label="Filtros">
+      <h2>Filtros</h2>
+      <div class="filter-group">
+        <span class="filter-title">Categoria</span>
+        <label><input type="checkbox" /> Skincare</label>
+        <label><input type="checkbox" /> Maquiagem</label>
+        <label><input type="checkbox" /> Cabelos</label>
+      </div>
+      <div class="filter-group">
+        <span class="filter-title">Preço</span>
+        <label><input type="radio" name="preco" /> até R$ 50</label>
+        <label><input type="radio" name="preco" /> R$ 50 – R$ 150</label>
+        <label><input type="radio" name="preco" /> R$ 150+</label>
+      </div>
+      <button class="btn-outline">Aplicar filtros</button>
+    </aside>
+
+    <!-- Lista de produtos -->
+    <section class="products" aria-label="Lista de produtos">
+      <div class="products-header">
+        <h2>Destaques</h2>
+        <select aria-label="Ordenar produtos">
+          <option>Ordenar: Mais recentes</option>
+          <option>Menor preço</option>
+          <option>Maior preço</option>
+          <option>Mais vendidos</option>
+        </select>
+      </div>
+
+      <ul class="product-grid">
+        <!-- Card 1 -->
+        <li class="product-card">
+          <img src="https://picsum.photos/seed/serum/480/480" alt="Sérum facial hidratante 30ml" />
+          <div class="product-info">
+            <h3 class="product-title">Sérum Hidratante 30ml</h3>
+            <p class="product-brand">GlowLab</p>
+            <div class="price-row">
+              <span class="price">R$ 79,90</span>
+              <button class="btn-add">Adicionar</button>
+            </div>
+          </div>
+        </li>
+
+        <!-- Card 2 -->
+        <li class="product-card">
+          <img src="https://picsum.photos/seed/mask/480/480" alt="Máscara de argila purificante" />
+          <div class="product-info">
+            <h3 class="product-title">Máscara de Argila</h3>
+            <p class="product-brand">PureSkin</p>
+            <div class="price-row">
+              <span class="price">R$ 49,90</span>
+              <button class="btn-add">Adicionar</button>
+            </div>
+          </div>
+        </li>
+
+        <!-- Card 3 -->
+        <li class="product-card">
+          <img src="https://picsum.photos/seed/lipstick/480/480" alt="Batom matte cor rosa nude" />
+          <div class="product-info">
+            <h3 class="product-title">Batom Matte</h3>
+            <p class="product-brand">Velvet</p>
+            <div class="price-row">
+              <span class="price">R$ 39,90</span>
+              <button class="btn-add">Adicionar</button>
+            </div>
+          </div>
+        </li>
+
+        <!-- Card 4 -->
+        <li class="product-card">
+          <img src="https://picsum.photos/seed/shampoo/480/480" alt="Shampoo nutritivo 300ml" />
+          <div class="product-info">
+            <h3 class="product-title">Shampoo Nutritivo</h3>
+            <p class="product-brand">HairCare</p>
+            <div class="price-row">
+              <span class="price">R$ 29,90</span>
+              <button class="btn-add">Adicionar</button>
+            </div>
+          </div>
+        </li>
+      </ul>
+
+      <!-- Paginação (simples) -->
+      <nav class="pagination" aria-label="Paginação">
+        <a href="#" aria-label="Página anterior">«</a>
+        <a href="#" class="active" aria-current="page">1</a>
+        <a href="#">2</a>
+        <a href="#">3</a>
+        <a href="#" aria-label="Próxima página">»</a>
+      </nav>
+    </section>
+  </main>
+
+  <!-- Rodapé -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <h4>GlowBeauty</h4>
+        <p>Cosméticos selecionados para sua rotina de beleza.</p>
+      </div>
+      <div>
+        <h4>Ajuda</h4>
+        <ul>
+          <li><a href="#">Trocas e devoluções</a></li>
+          <li><a href="#">Envio & prazos</a></li>
+          <li><a href="#">Atendimento</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contato</h4>
+        <ul>
+          <li>WhatsApp: (00) 00000-0000</li>
+          <li>Email: contato@glowbeauty.com</li>
+        </ul>
+      </div>
+    </div>
+    <div class="copy">© 2025 GlowBeauty. Todos os direitos reservados.</div>
+  </footer>
+</body>
+</html>
