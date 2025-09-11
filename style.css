@@ -145,3 +145,15 @@ body{
 .copy{
   text-align:center; padding: .9rem 0; border-top:1px solid var(--border); color: var(--muted);
 }
+
+.hero-content h1 {
+  font-size: 32px; /* ajuste como quiser */
+  font-weight: bold;
+  color: #000; /* preto para "Lojas" e o restante */
+}
+
+.hero-content h1 .highlight {
+  color: #d946ef;   /* rosa suave */
+  
+  font-weight: bold;
+}
