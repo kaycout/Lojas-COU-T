@@ -1,11 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
 
-    <style>
         :root{
   --bg: #ffffff;
   --text: #1f2937;
@@ -71,31 +64,3 @@ body{
   position:absolute; top:-6px; right:-6px; background: var(--primary-600); color:#fff;
   font-size:.72rem; border-radius:999px; padding:.05rem .35rem;
 }
-
-    </style>
-</head>
-<body>
-    <!-- Header -->
-  <header class="site-header">
-    <div class="container header-content">
-      <a href="index.html" class="logo" aria-label="Página inicial">Lojas<span>CouT</span></a>
-
-      <form class="search" role="search" aria-label="Buscar produtos">
-        <input type="search" placeholder="Buscar cosméticos, marcas..." aria-label="Buscar" />
-        <button type="submit">Buscar</button>
-      </form>
-
-      <nav class="nav" aria-label="Navegação principal">
-        <a href="novidades.html">Novidades</a>
-        <a href="skincare.html">Skincare</a>
-        <a href="maquiagem.html">Maquiagem</a>
-        <a href="cabelos.html">Cabelos</a>
-        <a href="promocoes.html">Promoções</a>
-        <a href="carrinho.html" class="cart" aria-label="Carrinho">🛒 <span class="badge">2</span></a>
-      </nav>
-    </div>
-  </header>
-  
-</body>
-
-</html>
