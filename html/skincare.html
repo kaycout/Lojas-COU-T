@@ -29,7 +29,137 @@
       </nav>
     </div>
   </header>
-  
-</body>
 
+  <!-- Banner / Hero -->
+<section class="hero">
+  <div class="container hero-content">
+    <h1>Lojas<span class="highlight">CouT</span>: Sessão Skincare</h1>
+    <p>Aqui você encontrará todos os nossos produtos de cuidados para a pele.</p>
+  </div>
+</section>
+
+  <!-- Conteúdo principal -->
+  <main class="container main-grid">
+    <!-- Filtros (opcional) -->
+    <aside class="filters" aria-label="Filtros">
+      <h2>Filtros</h2>
+      <div class="filter-group">
+        <span class="filter-title">Categoria</span>
+        <label><input type="checkbox" /> Skincare</label>
+        <label><input type="checkbox" /> Cabelos</label>
+        <label><input type="checkbox" /> Maquiagens</label>
+      </div>
+      <div class="filter-group">
+        <span class="filter-title">Preço</span>
+        <label><input type="radio" name="preco" /> até R$ 50</label>
+        <label><input type="radio" name="preco" /> R$ 50 – R$ 150</label>
+        <label><input type="radio" name="preco" /> R$ 150+</label>
+      </div>
+      <button class="btn-outline">Aplicar filtros</button>
+    </aside>
+
+    <!-- Lista de produtos -->
+    <section class="products" aria-label="Lista de produtos">
+      <div class="products-header">
+        <h2>Destaques</h2>
+        <select aria-label="Ordenar produtos">
+          <option>Ordenar: Mais recentes</option>
+          <option>Menores preços</option>
+          <option>Maiores preços</option>
+          <option>Mais vendidos</option>
+        </select>
+      </div>
+
+      <ul class="product-grid">
+        <!-- Card 1 -->
+        <li class="product-card">
+          <img src="../images/batom_cout.png" alt="Batom Cout" />
+          <div class="product-info">
+            <h3 class="product-title">Batom cout</h3>
+            <p class="product-brand">GlowLab</p>
+            <div class="price-row">
+              <span class="price">R$ 35,90</span>
+              <button class="btn-add">Adicionar</button>
+            </div>
+          </div>
+        </li>
+
+        <!-- Card 2 -->
+        <li class="product-card">
+          <img src="../images/base_cout.png" alt="Base Cout - Líquida Matte Alta cobertura" />
+          <div class="product-info">
+            <h3 class="product-title">Base Cout - Liquida Matte Alta Cobertura </h3>
+            <p class="product-brand">PureSkin</p>
+            <div class="price-row">
+              <span class="price">R$ 49,90</span>
+              <button class="btn-add">Adicionar</button>
+            </div>
+          </div>
+        </li>
+
+        <!-- Card 3 -->
+        <li class="product-card">
+          <img src="../images/blush_cout.png" alt="Blush Cremoso Rosa - Cout" />
+          <div class="product-info">
+            <h3 class="product-title">Blush cremoso rosa - Cout </h3>
+            <p class="product-brand">Velvet</p>
+            <div class="price-row">
+              <span class="price">R$ 29,90</span>
+              <button class="btn-add">Adicionar</button>
+            </div>
+          </div>
+        </li>
+
+        <!-- Card 4 -->
+        <li class="product-card">
+          <img src="../images/paleta_de_sombras_cout.png" alt="Paleta de sombras - Cout 9 cores" />
+          <div class="product-info">
+            <h3 class="product-title">Paleta de sombras - 9 cores</h3>
+            <p class="product-brand">HairCare</p>
+            <div class="price-row">
+              <span class="price">R$ 29,90</span>
+              <button class="btn-add">Adicionar</button>
+            </div>
+          </div>
+        </li>
+      </ul>
+
+      <!-- Paginação (simples) -->
+      <nav class="pagination" aria-label="Paginação">
+        <a href="#" aria-label="Página anterior">«</a>
+        <a href="#" class="active" aria-current="page">1</a>
+        <a href="#">2</a>
+        <a href="#">3</a>
+        <a href="#" aria-label="Próxima página">»</a>
+      </nav>
+    </section>
+  </main>
+
+  <!-- Rodapé -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <h4>GlowBeauty</h4>
+        <p>Cosméticos selecionados para sua rotina de beleza.</p>
+      </div>
+      <div>
+        <h4>Ajuda</h4>
+        <ul>
+          <li><a href="#">Trocas e devoluções</a></li>
+          <li><a href="#">Envio & prazos</a></li>
+          <li><a href="#">Atendimento</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contato:</h4>
+        <ul>
+          <li>WhatsApp: <a href="https://web.whatsapp.com/">(11) 95594-3948</a></li> <a href="https://web.whatsapp.com/"> (11) 970236373</a></li>
+          <li>Email: <a href="https://mail.google.com/mail/u/0/?hl=pt-BR#inbox">lojascout@gmail.com</a></li>
+          <li> <a href="https://mail.google.com/mail/u/0/?hl=pt-BR#inbox">suportecout@gmail.com</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="copy">© 2025 LojasCout. Todos os direitos reservados.</div>
+  </footer>
+</body>
 </html>
