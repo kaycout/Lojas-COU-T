@@ -1,20 +1,19 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-     <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-     <title>COU-T | Carrinho</title>
+  <title>COU-T | Carrinho</title>
   <link rel="stylesheet" href="../css/carrinho.css" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
- 
+
 <body>
     <!-- Header -->
   <header class="site-header">
     <div class="container header-content">
-      <a href="index.html" class="logo" aria-label="Página inicial">Lojas<span>CouT</span></a>
+      <a href="carrinho.html" class="logo" aria-label="Página inicial">Lojas<span>CouT</span></a>
 
       <form class="search" role="search" aria-label="Buscar produtos">
         <input type="search" placeholder="Buscar cosméticos, marcas..." aria-label="Buscar" />
@@ -31,7 +30,72 @@
       </nav>
     </div>
   </header>
-  
-</body>
 
+   <main class="sacola container">
+    <h1>Minha Sacola</h1>
+
+    <section class="sacola-lista">
+      <!-- Produto 1 -->
+      <article class="produto-sacola">
+        <img src="../images/paleta_de_sombras_cout.png" alt="Paleta de sombras" />
+        <div class="produto-info">
+          <h3>Paleta de sombras - Cout</h3>
+          <p>Efeito natural, alta pigmentação e boa duração.</p>
+          <span class="produto-preco">R$ 29,90</span>
+        </div>
+        <div class="produto-quantidade">
+          <label for="qtd1" class="sr-only">Quantidade</label>
+          <input type="number" id="qtd1" min="1" value="1" />
+        </div>
+        <button class="botao-remover" aria-label="Remover Base Líquida Matte da sacola">Remover</button>
+      </article>
+
+      <!-- Produto 2 -->
+      <article class="produto-sacola">
+        <img src="../images/caneta_delineadora.png" alt="Caneta delineadora" />
+        <div class="produto-info">
+          <h3>Ótima fixação - à prova d'água.</h3>
+          <p>Textura macia, longa duração.</p>
+          <span class="produto-preco">R$ 15,00</span>
+        </div>
+        <div class="produto-quantidade">
+          <label for="qtd2" class="sr-only">Quantidade</label>
+          <input type="number" id="qtd2" min="1" value="2" />
+        </div>
+        <button class="botao-remover" aria-label="Remover Batom Rosa Cremoso da sacola">Remover</button>
+      </article>
+    </section>
+
+    <button class="botao-finalizar">Finalizar Compra</button>
+  </main>
+
+ <!-- Rodapé -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <h4>GlowBeauty</h4>
+        <p>Cosméticos selecionados para sua rotina de beleza.</p>
+      </div>
+      <div>
+        <h4>Ajuda</h4>
+        <ul>
+          <li><a href="#">Trocas e devoluções</a></li>
+          <li><a href="#">Envio & prazos</a></li>
+          <li><a href="#">Atendimento</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contato:</h4>
+        <ul>
+          <li>WhatsApp: <a href="https://web.whatsapp.com/">(11) 95594-3948</a> ou </li> <a href="https://web.whatsapp.com/"> (11) 970236373</a></li>
+          <li>Email: <a href="https://mail.google.com/mail/u/0/?hl=pt-BR#inbox">lojascout@gmail.com</a> ou </li>
+          <li> <a href="https://mail.google.com/mail/u/0/?hl=pt-BR#inbox">suportecout@gmail.com</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="copy">© 2025 LojasCout. Todos os direitos reservados.</div>
+  </footer>
+
+</body>
 </html>
+
