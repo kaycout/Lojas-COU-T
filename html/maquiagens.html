@@ -11,7 +11,7 @@
     <!-- Header -->
   <header class="site-header">
     <div class="container header-content">
-      <a href="index.html" class="logo" aria-label="Página inicial">Lojas<span>CouT</span></a>
+      <a href="maquiagens.html" class="logo" aria-label="Página de maquiagens">Lojas<span>CouT</span></a>
 
       <form class="search" role="search" aria-label="Buscar produtos">
         <input type="search" placeholder="Buscar cosméticos, marcas..." aria-label="Buscar" />
@@ -25,11 +25,252 @@
         <a href="cupons.html">Cupons</a>
         <a href="blog.html">Blog</a>
         <a href="carrinho.html" class="cart" aria-label="Carrinho">🛒 <span class="badge">3</span></a>
-        <a href="carrinho.html" class="perfil" aria-label="login">👩</a>
+        <a href="login.html" class="perfil" aria-label="login">👩</a>
+
       </nav>
     </div>
   </header>
   
-</body>
+<!-- Banner / Hero -->
+  <section class="hero">
+    <div class="container hero-content">
+      <h1>Lojas<span class="highlight">COU'T</span>: Aqui você encontra diversos produtos</h1>
+      <p>Seleção de maquiagens. Na lojas COUT você encontra qualidade para compor sua maquiagem.</p>
+    </div>
+  </section>
 
+  <!-- Conteúdo principal -->
+  <main class="container main-grid">
+    <!-- Filtros -->
+    <aside class="filters" aria-label="Filtros">
+      <h2>Filtros</h2>
+      <div class="filter-group">
+        <span class="filter-title">Categoria</span>
+        <label><input type="checkbox" /> Batons</label>
+        <label><input type="checkbox" /> Lip Oil</label>
+        <label><input type="checkbox" /> Delineadores</label>
+      </div>
+      <div class="filter-group">
+        <span class="filter-title">Preço</span>
+        <label><input type="radio" name="preco" /> até R$ 50</label>
+        <label><input type="radio" name="preco" /> R$ 50 - R$ 80</label>
+        <label><input type="radio" name="preco" /> R$ 100+</label>
+      </div>
+      <button class="btn-outline">Aplicar filtros</button>
+    </aside>
+
+    <!-- Lista de produtos -->
+    <section class="products" aria-label="Lista de produtos">
+      <div class="products-header">
+        <h2>Destaques</h2>
+        <select aria-label="Ordenar produtos">
+          <option>Ordenar: Mais recentes</option>
+          <option>Menores preços</option>
+          <option>Maiores preços</option>
+          <option>Mais vendidos</option>
+        </select>
+      </div>
+
+      <ul class="product-grid">
+        <!-- Card 1 -->
+        <li class="product-card">
+          <img src="../images/batom_cout.png" alt="Batom Rosa Escuro - COU'T" />
+          <div class="product-info">
+            <h3 class="product-title">Batom COU'T</h3>
+            <p class="product-brand">Batom Rosa Escuro - Acabamento Matte e Alta Cobertura | (4 g / 3,5 ml).</p>
+            <div class="price-row">
+              <span class="price">R$ 35,90</span>
+              <button class="btn-add">Adicionar</button>
+            </div>
+          </div>
+        </li>
+
+        <!-- Card 2 -->
+        <li class="product-card">
+          <img src="../images/base_cout.png" alt="Base Líquida COU'T - Matte Alta Cobertura" />
+          <div class="product-info">
+            <h3 class="product-title">Base COU'T - Líquida Matte</h3>
+            <p class="product-brand">Base Facial COU'T - Alta Cobertura e Acabamento Matte (30 ml).</p>
+            <div class="price-row">
+              <span class="price">R$ 49,90</span>
+              <button class="btn-add">Adicionar</button>
+            </div>
+          </div>
+        </li>
+
+        <!-- Card 3 -->
+        <li class="product-card">
+          <img src="../images/blush_cout.png" alt="Blush Cremoso Rosa - COU'T" />
+          <div class="product-info">
+            <h3 class="product-title">Blush Cremoso Rosa - COU'T</h3>
+            <p class="product-brand">Blush Cremoso Rosa - COU'T (5 g).</p>
+            <div class="price-row">
+              <span class="price">R$ 29,90</span>
+              <button class="btn-add">Adicionar</button>
+            </div>
+          </div>
+        </li>
+
+        <!-- Card 4 -->
+        <li class="product-card">
+          <img src="../images/paleta_de_sombras_cout.png" alt="Paleta de Sombras - COU'T" />
+          <div class="product-info">
+            <h3 class="product-title">Paleta de Sombras - 9 Cores</h3>
+            <p class="product-brand">Paleta de Cores - COU'T, Alta Pigmentação (12 cores, 18 g).</p>
+            <div class="price-row">
+              <span class="price">R$ 29,90</span>
+              <button class="btn-add">Adicionar</button>
+            </div>
+          </div>
+        </li>
+
+        <!-- Card 5 -->
+        <li class="product-card">
+          <img src="../images/caneta_delineadora.png" alt="Caneta Delineadora Preta - COU'T" />
+          <div class="product-info">
+            <h3 class="product-title">Caneta Delineadora</h3>
+            <p class="product-brand">Caneta Delineadora COU'T - à prova d'água, cor preta.</p>
+            <div class="price-row">
+              <span class="price">R$ 22,90</span>
+              <button class="btn-add">Adicionar</button>
+            </div>
+          </div>
+        </li>
+
+        <!-- Card 6 -->
+        <li class="product-card">
+          <img src="../images/corretivo_cout.png" alt="Corretivo Matte Alta Cobertura - COU'T" />
+          <div class="product-info">
+            <h3 class="product-title">Corretivo COU'T - Matte Alta Cobertura</h3>
+            <p class="product-brand">Corretivo Matte COU'T - à prova d'água, alta cobertura e efeito natural (25 ml).</p>
+            <div class="price-row">
+              <span class="price">R$ 34,00</span>
+              <button class="btn-add">Adicionar</button>
+            </div>
+          </div>
+        </li>
+
+         <!-- Card 7-->
+        <li class="product-card">
+          <img src="../images/po_cout.png" alt= "Pó Matte Alta Cobertura - COU'T" />
+          <div class="product-info">
+            <h3 class="product-title">Pó COU'T - Matte Alta Cobertura</h3>
+            <p class="product-brand">Pó Matte COU'T - à prova d'água, alta cobertura e efeito natural (30 ml).</p>
+            <div class="price-row">
+              <span class="price">R$ 15,80</span>
+              <button class="btn-add">Adicionar</button>
+            </div>
+          </div>
+        </li>
+
+         <!-- Card 8 -->
+        <li class="product-card">
+          <img src="../images/iluminador_cout.png" alt="Iluminador Matte Alta Pigmentação fixação - COU'T" />
+          <div class="product-info">
+            <h3 class="product-title">Iluminador COU'T - Matte Alta Pigmentação e fixação</h3>
+            <p class="product-brand">Iluminador paleta Matte COU'T - à prova d'água, alta cobertura e efeito natural (25 ml).</p>
+            <div class="price-row">
+              <span class="price">R$ 34,00</span>
+              <button class="btn-add">Adicionar</button>
+            </div>
+          </div>
+        </li>
+
+        <!-- Card 8 -->
+        <li class="product-card">
+          <img src="../images/batom2_cout.png" alt="Batom Matte - Alta cobertura e pigmentação - COU'T" />
+          <div class="product-info">
+            <h3 class="product-title">Batom COU'T - Contém alta fixação e não craquela.</h3>
+            <p class="product-brand">Batom matte COU'T - à prova d'água, alta cobertura e hidratante(25 ml).</p>
+            <div class="price-row">
+              <span class="price">R$ 60,00</span>
+              <button class="btn-add">Adicionar</button>
+            </div>
+          </div>
+        </li>
+
+        <!-- Card 9 -->
+        <li class="product-card">
+          <img src="../images/rimel_cout.png" alt="Rimel à prova d'água e alta fixação" - COU'T" />
+          <div class="product-info">
+            <h3 class="product-title">Rímel COU'T - Efeito natural, promete alongamento do cílios</h3>
+            <p class="product-brand">Rímel COU'T - à prova d'água, alta cobertura e efeito natural (25 ml).</p>
+            <div class="price-row">
+              <span class="price">R$ 42,00</span>
+              <button class="btn-add">Adicionar</button>
+            </div>
+          </div>
+        </li>
+
+        <!-- Card 10 -->
+        <li class="product-card">
+          <img src="../images/gloss_cout.png" alt="Gloss, lip oil - hidratante alta cobertura - COU'T" />
+          <div class="product-info">
+            <h3 class="product-title">Gloss COU'T - Alta fixação, sem deixar com uma textura ruim na boca e com cheiro de Tuti Frutti</h3>
+            <p class="product-brand">Gloss - lip oil COU'T - efeito natural (25 ml).</p>
+            <div class="price-row">
+              <span class="price">R$ 48,50</span>
+              <button class="btn-add">Adicionar</button>
+            </div>
+          </div>
+        </li>
+
+        <!-- Card 11 -->
+        <li class="product-card">
+          <img src="../images/gloss_cout_chaveiro.png" alt="Gloss com chaveiro, lip oil - hidratante alta cobertura - COU'T" />
+          <div class="product-info">
+            <h3 class="product-title">Gloss COU'T - Alta fixação, sem deixar com uma textura ruim na boca e com cheiro de Tuti Frutti</h3>
+            <p class="product-brand">Gloss - lip oil COU'T - efeito natural (25 ml).</p>
+            <div class="price-row">
+              <span class="price">R$ 60,00</span>
+              <button class="btn-add">Adicionar</button>
+            </div>
+          </div>
+        </li>
+      </ul>
+
+      <!-- Paginação -->
+      <nav class="pagination" aria-label="Paginação">
+        <a href="#" aria-label="Página anterior">«</a>
+        <a href="#" class="active" aria-current="page">1</a>
+        <a href="#">2</a>
+        <a href="#">3</a>
+        <a href="#" aria-label="Próxima página">»</a>
+      </nav>
+    </section>
+  </main>
+
+  <!-- Rodapé -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <h4>COU'T</h4>
+        <p>Cosméticos selecionados para sua rotina de beleza.</p>
+      </div>
+      <div>
+        <h4>Ajuda</h4>
+        <ul>
+          <li><a href="#">Trocas e devoluções</a></li>
+          <li><a href="#">Envio & prazos</a></li>
+          <li><a href="#">Atendimento</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contato</h4>
+        <ul>
+          <li>WhatsApp: 
+            <a href="https://web.whatsapp.com/">(11) 95594-3948</a> | 
+            <a href="https://web.whatsapp.com/">(11) 97023-6373</a>
+          </li>
+          <li>Email: 
+            <a href="mailto:lojascout@gmail.com">lojascout@gmail.com</a> | 
+            <a href="mailto:suportecout@gmail.com">suportecout@gmail.com</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="copy">© 2025 Lojas COU'T. Todos os direitos reservados.</div>
+  </footer>
+</body>
 </html>
+
