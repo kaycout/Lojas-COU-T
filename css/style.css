@@ -121,14 +121,14 @@ body{
 @media (max-width: 800px){ .product-grid{ grid-template-columns: repeat(2,1fr); } }
 @media (max-width: 520px){ .product-grid{ grid-template-columns: 1fr; } }
 
-.product-card{
-  background:#fff; border:1px solid var(--border); border-radius: var(--radius); 
-  overflow:hidden; box-shadow: var(--shadow);
-  transition: transform .12s ease;
-  display: flex;
-  flex-direction: column;
-}
-.product-card:hover{ transform: translateY(-3px); }
+  .product-card{
+    background:#fff; border:1px solid var(--border); border-radius: var(--radius); 
+    overflow:hidden; box-shadow: var(--shadow);
+    transition: transform .12s ease;
+    display: flex;
+    flex-direction: column;
+  }
+  .product-card:hover{ transform: translateY(-3px); }
 
 /* Imagens dos produtos */
 .product-card img{
@@ -175,4 +175,80 @@ body{
 .footer-grid ul{ margin:0; padding:0; list-style:none; display:grid; gap:.35rem; }
 .copy{
   text-align:center; padding: .9rem 0; border-top:1px solid var(--border); color: var(--muted);
+}
+
+body {
+  margin: 0;
+  font-family: "Poppins", Arial, sans-serif;
+  background: #f4f4f9;
+}
+
+header {
+  background: #6200ea;
+  color: white;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+h1 {
+  margin: 0;
+  font-size: 20px;
+}
+
+.menu-container {
+  position: relative;
+}
+
+.menu-btn {
+  background: none;
+  border: none;
+  color: rgb(228, 97, 235);
+  font-size: 24px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.menu-btn:hover {
+  transform: scale(1.2);
+}
+
+.menu-dropdown {
+  display: none;
+  position: absolute;
+  right: 0;
+  margin-top: 10px;
+  background: rgb(255, 255, 255);
+  min-width: 180px;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+  overflow: hidden;
+  animation: fadeIn 0.3s ease;
+}
+
+.menu-dropdown a {
+  display: block;
+  padding: 12px 15px;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: background 0.2s;
+}
+
+.menu-dropdown a:hover {
+  background: #f1f1f1;
+  color: rgb(228, 97, 235);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
