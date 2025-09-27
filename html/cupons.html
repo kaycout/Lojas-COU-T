@@ -1,37 +1,72 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>COU-T | Cupons de desconto</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cupons - Lojas COU'T</title>
   <link rel="stylesheet" href="../css/cupons.css" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="../images/maquiagem.png">
+  <meta name="description" content="Aproveite os cupons de desconto exclusivos da Lojas COU'T." />
 </head>
-
 <body>
-    <!-- Header -->
-  <header class="site-header">
-    <div class="container header-content">
-      <a href="index.html" class="logo" aria-label="Página inicial">Lojas<span>CouT</span></a>
+  <main class="cupons-container">
+    <section class="cupons-box">
+      <h1>🎁 Cupons Exclusivos COU'T</h1>
+      <p class="descricao">Pesquise, copie e aproveite nossos cupons de desconto!</p>
 
-      <form class="search" role="search" aria-label="Buscar produtos">
-        <input type="search" placeholder="Buscar cosméticos, marcas..." aria-label="Buscar" />
-        <button type="submit">Buscar</button>
-      </form>
+      <!-- Barra de busca -->
+      <div class="busca-cupons">
+        <input type="text" id="busca" placeholder="🔍 Buscar cupom..." onkeyup="filtrarCupons()" />
+      </div>
 
-      <nav class="nav" aria-label="Navegação principal.">
-        <a href="skincare.html">Skincare</a>
-        <a href="cabelos.html">Cabelos</a>
-        <a href="maquiagens.html">Maquiagens</a>
-        <a href="cupons.html">Cupons</a>
-        <a href="blog.html">Blog</a>
-        <a href="carrinho.html" class="cart" aria-label="Carrinho">🛒 <span class="badge">3</span></a>
-      </nav>
-    </div>
-  </header>
-  
+      <!-- Lista de cupons -->
+      <div class="lista-cupons">
+        <div class="cupom-card">
+          <h2>CUPOM10</h2>
+          <p>Ganhe <strong>10% OFF</strong> em compras acima de R$ 100.</p>
+          <span class="validade">Válido até: 30/09/2025</span>
+          <button onclick="copiarCodigo('CUPOM10')">Copiar Código</button>
+        </div>
+
+        <div class="cupom-card">
+          <h2>FRETEGRATIS</h2>
+          <p>Frete grátis para compras acima de R$ 150.</p>
+          <span class="validade">Válido até: 15/10/2025</span>
+          <button onclick="copiarCodigo('FRETEGRATIS')">Copiar Código</button>
+        </div>
+
+        <div class="cupom-card">
+          <h2>BELEZA20</h2>
+          <p><strong>20% OFF</strong> em toda a categoria de maquiagem.</p>
+          <span class="validade">Válido até: 05/11/2025</span>
+          <button onclick="copiarCodigo('BELEZA20')">Copiar Código</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    // Função para copiar código
+    function copiarCodigo(codigo) {
+      navigator.clipboard.writeText(codigo).then(() => {
+        alert("✅ Código " + codigo + " copiado com sucesso!");
+      });
+    }
+
+    // Função para filtrar cupons
+    function filtrarCupons() {
+      let input = document.getElementById("busca").value.toUpperCase();
+      let cupons = document.getElementsByClassName("cupom-card");
+
+      for (let i = 0; i < cupons.length; i++) {
+        let titulo = cupons[i].getElementsByTagName("h2")[0];
+        if (titulo.innerText.toUpperCase().indexOf(input) > -1) {
+          cupons[i].style.display = "";
+        } else {
+          cupons[i].style.display = "none";
+        }
+      }
+    }
+  </script>
 </body>
-
 </html>

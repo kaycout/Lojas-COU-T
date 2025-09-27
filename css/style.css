@@ -166,7 +166,7 @@ body{
 
 /* Rodapé */
 .site-footer{
-  border-top: 1px solid var(--border); background:#fff;
+  border-top: 1px solid var(--border); background:#fcd1fa;
 }
 .footer-grid{
   display:grid; grid-template-columns: repeat(3,1fr); gap: 1.2rem; padding: 2rem 0;
