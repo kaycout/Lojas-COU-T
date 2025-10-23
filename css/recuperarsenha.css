@@ -1,0 +1,104 @@
+/* login.css - Estilo da página de login da Lojas COU'T */
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #fbeff5, #fff);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: #333;
+}
+
+.login-container {
+  width: 100%;
+  max-width: 400px;
+  padding: 2rem;
+  background-color: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+.login-box h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 1.8rem;
+  color: #d946ef;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.login-form label {
+  margin-bottom: 0.3rem;
+  font-weight: 600;
+}
+
+.login-form input {
+  padding: 0.8rem;
+  margin-bottom: 1.2rem;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 1rem;
+  transition: 0.3s;
+}
+
+.login-form input:focus {
+  outline: none;
+  border-color: #d946ef;
+  box-shadow: 0 0 5px rgba(233, 30, 99, 0.5);
+}
+
+.botao-entrar {
+  padding: 0.8rem;
+  background-color: #d946ef;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.botao-entrar:hover {
+  background-color: #d946ef;
+}
+
+.form-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.link-esqueci-senha {
+  font-size: 0.9rem;
+  color: #666;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.link-esqueci-senha:hover {
+  color: #d946ef;
+}
+
+.cadastro-link {
+  text-align: center;
+  margin-top: 1.5rem;
+  font-size: 0.95rem;
+}
+
+.cadastro-link a {
+  color: #d946ef;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
