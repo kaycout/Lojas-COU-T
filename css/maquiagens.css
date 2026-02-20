@@ -112,6 +112,11 @@ body{
   padding:.35rem;
 }
 
+.cart {
+  position: relative;
+  text-decoration: none;
+}
+
 .search input{
   flex:1;
   border:0;
@@ -409,7 +414,7 @@ body{
 .menu-btn{
   background: none;
   border: none;
-  color: rgb(228, 97, 235);
+  color: rgb(0, 0, 0);
   font-size: 24px;
   cursor: pointer;
   transition: transform 0.2s ease;
